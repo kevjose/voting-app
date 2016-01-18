@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1 ,user-scalable=no, maximum-scale=1,width=device-width"/>
+  <title>LetsPollIt</title>
+  <link href="favicon.png" rel="shortcut icon">
+  <link href="//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+  <script src="//monospaced.github.io/bower-qrcode-generator/js/qrcode.js"></script>
+  <script src="//monospaced.github.io/bower-qrcode-generator/js/qrcode_UTF8.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+  <script src="angular-qrcode.js"></script>
+</head>
+
+
+<body ng-controller="PollListCtrl" class="container">
+   <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">LetsPollIt</a>
+      </div>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li><a href=""></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#/polls">Polls</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div id="main" style="margin-top: 70px;">
+  
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+  </div>
+  
+</body>
+</html>
