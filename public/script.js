@@ -57,7 +57,7 @@ angular.module('app', ['ngRoute','ngResource','monospaced.qrcode'])
     };
 
     $scope.bar= $window.location.href;
-    $scope.v= 4;
+    $scope.v= 10;
     $scope.e= 'M';
     $scope.s= 274;
   })
